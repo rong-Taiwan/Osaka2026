@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4/6 京都：稻荷大社與清水寺</title>
+    <style>
+        :root {
+            --inari-orange: #ff4d00; /* 稻荷鳥居紅 */
+            --wood-brown: #5d4037;
+            --sakura-pink: #fce4ec;
+            --kyoto-gold: #bcaaa4;
+            --bg: #fffbf0; /* 宣紙色 */
+        }
+        body { font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: auto; }
+        
+        /* 標題：古都風格 */
+        .header { 
+            background: var(--inari-orange); 
+            color: white; padding: 25px; border-radius: 5px; margin-bottom: 25px; 
+            text-align: center; border: 2px solid var(--wood-brown);
+            box-shadow: 5px 5px 0px var(--wood-brown);
+        }
+        .header h1 { margin: 0; font-size: 1.4rem; letter-spacing: 2px; }
+
+        .time-box {
+            background: var(--wood-brown);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .card { 
+            background: white; border-radius: 0; padding: 20px; margin-bottom: 20px; 
+            border: 1px solid #ddd; position: relative;
+            box-shadow: 3px 3px 10px rgba(0,0,0,0.05);
+        }
+        .card::before { content: '⛩️'; position: absolute; right: 10px; top: 10px; opacity: 0.1; font-size: 2rem; }
+
+        .title { display: block; margin-top: 10px; font-size: 1.1rem; font-weight: bold; color: var(--wood-brown); border-bottom: 1px solid var(--kyoto-gold); padding-bottom: 5px; }
+        .desc { font-size: 0.95rem; color: #444; margin-top: 10px; line-height: 1.7; }
+
+        /* 交通導航區塊 */
+        .nav-info { 
+            background: #fdf2e9; padding: 12px; border-radius: 5px; 
+            margin-top: 10px; font-size: 0.85rem; color: #6d4c41;
+            border: 1px dashed var(--inari-orange);
+        }
+        .nav-info b { color: var(--inari-orange); }
+
+        /* 櫻花季提醒 */
+        .sakura-alert {
+            background: var(--sakura-pink); color: #ad1457; padding: 5px 10px; 
+            border-radius: 20px; font-size: 0.85rem; margin-top: 10px; display: inline-block;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>4/6 (一) 京都文化巡禮 ⛩️</h1>
+        <p>伏見稻荷 ➔ 祇園 ➔ 清水寺賞櫻</p>
+    </div>
+
+    <div class="card">
+        <div class="time-box">08:30 - 09:30</div>
+        <span class="title">出發前往京都 🚃</span>
+        <div class="nav-info">
+            <b>路線：</b><br>
+            1. 大國町 ➔ <b>淀屋橋</b> (御堂筋線)<br>
+            2. 轉乘 <b>京阪電車</b> (特急/急行) ➔ 伏見稻荷站<br>
+            💡 可使用 ICOCA 或京阪一日券
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">09:30 - 12:00</div>
+        <span class="title">伏見稻荷大社 🦊</span>
+        <div class="desc">
+            漫步「千本鳥居」紅色隧道。建議穿著好走的鞋子往山上面走一點，人潮會較少。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">12:00 - 13:00</div>
+        <span class="title">午餐：當地特色 🍣</span>
+        <div class="desc">推薦嘗試：稻荷壽司、鯖魚壽司或日式烏龍麵。</div>
+    </div>
+
+    <div class="card" style="border-left: 5px solid var(--sakura-pink);">
+        <div class="time-box">13:00 - 18:00</div>
+        <span class="title">祇園 & 清水寺賞櫻 🌸</span>
+        <div class="nav-info">
+            <b>交通：</b>伏見稻荷站 ➔ 祇園四條站 / 清水五條站
+        </div>
+        <div class="desc">
+            漫步<b>花見小路</b> ➔ 二年坂、三年坂 ➔ <b>清水寺</b>。享受古都櫻花美景。
+        </div>
+        <div class="sakura-alert">🌸 櫻花季人潮眾多，建議預留步行時間</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">18:00 - 19:00</div>
+        <span class="title">晚餐時間 🏮</span>
+        <div class="desc">
+            <b>方案 A：</b>京都享用傳統京都料理。<br>
+            <b>方案 B：</b>回大阪難波/大國町找熱鬧居酒屋。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">19:00 - 20:00</div>
+        <span class="title">返回大阪 🏠</span>
+        <div class="desc">
+            搭乘京阪電車至淀屋橋站，轉地鐵回大國町。
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

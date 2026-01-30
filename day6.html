@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4/8 賦歸：下次見，大阪！</title>
+    <style>
+        :root {
+            --sky-blue: #00b4d8;
+            --runway-gray: #333533;
+            --warning-orange: #fb8500;
+            --bg: #f8f9fa;
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: auto; }
+        
+        /* 標題：航空風格 */
+        .header { 
+            background: var(--sky-blue); 
+            color: white; padding: 25px; border-radius: 15px; margin-bottom: 25px; 
+            text-align: center; box-shadow: 0 4px 15px rgba(0, 180, 216, 0.3);
+            position: relative;
+        }
+        .header h1 { margin: 0; font-size: 1.4rem; }
+        .header::after { content: '✈️'; position: absolute; right: 20px; bottom: 10px; font-size: 2rem; opacity: 0.3; }
+
+        .time-box {
+            background: var(--runway-gray);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .card { 
+            background: #fff; border-radius: 12px; padding: 18px; margin-bottom: 15px; 
+            border-left: 6px solid #ddd; position: relative;
+        }
+        .card.important { border-left-color: var(--warning-orange); }
+
+        .title { display: block; margin-top: 10px; font-size: 1.1rem; font-weight: bold; color: var(--runway-gray); }
+        .desc { font-size: 0.95rem; color: #666; margin-top: 8px; line-height: 1.5; }
+
+        /* 交通重點 */
+        .transport-alert { 
+            background: #fff3e0; padding: 12px; border-radius: 8px; 
+            margin-top: 10px; font-size: 0.85rem; color: #e65100;
+            border: 1px solid #ffe0b2;
+        }
+        
+        /* 登機清單 */
+        .check-list {
+            margin-top: 15px; padding: 10px; background: #f1f8fe; border-radius: 8px;
+            font-size: 0.85rem; color: #0077b6;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>4/8 (三) 期待再相會 👋</h1>
+        <p>大阪 KIX ➔ 高雄 KHH</p>
+    </div>
+
+    <div class="card">
+        <div class="time-box">07:30 - 08:30</div>
+        <span class="title">飯店最後早餐 ☕</span>
+        <div class="desc">在飯店或大國町周邊最後巡禮，享用道地日式早餐。</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">08:30 - 09:30</div>
+        <span class="title">整理行李 & 退房 🧳</span>
+        <div class="desc">確認護照、ICOCA、手機電量。辦理飯店退房手續。</div>
+    </div>
+
+    <div class="card important">
+        <div class="time-box">09:30 - 10:45</div>
+        <span class="title">前往關西機場 (KIX) 🚃</span>
+        <div class="transport-alert">
+            <b>銜接建議：</b><br>
+            1. <b>大國町</b> ➔ <b>難波站</b> (地鐵 2 分鐘)<br>
+            2. 轉乘 <b>南海電鐵 Rapi:t</b> 或 機場急行<br>
+            ※ Rapi:t 建議事先劃位
+        </div>
+    </div>
+
+    <div class="card important">
+        <div class="time-box">10:45 - 11:30</div>
+        <span class="title">辦理登機 & 退稅 📋</span>
+        <div class="desc">抵達二航或一航（視航空公司），辦理行李託運與海關退稅。</div>
+        <div class="check-list">
+            ✅ 護照確認<br>
+            ✅ 伴手禮最後補貨 (免稅店)<br>
+            ✅ 飲水機裝水或買瓶飲料
+        </div>
+    </div>
+
+    <div class="card" style="background: #e3f2fd; border-left-color: var(--sky-blue);">
+        <div class="time-box">12:00</div>
+        <span class="title">班機起飛 ✈️</span>
+        <div class="desc">帶着滿滿的回憶，返回溫暖的家——高雄。</div>
+    </div>
+
+</div>
+
+</body>
+</html>

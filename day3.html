@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4/5 大阪：海洋探索與天保山</title>
+    <style>
+        :root {
+            --ocean-blue: #0077b6;
+            --deep-sea: #023e8a;
+            --accent-gold: #caf0f8;
+            --bg: #f0f8ff;
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: auto; }
+        
+        /* 標題：海洋深藍 */
+        .header { 
+            background: linear-gradient(135deg, var(--deep-sea), var(--ocean-blue)); 
+            color: white; padding: 25px; border-radius: 20px; margin-bottom: 20px; 
+            text-align: center; box-shadow: 0 4px 15px rgba(2, 62, 138, 0.3);
+        }
+        .header h1 { margin: 0; font-size: 1.4rem; }
+        
+        /* 時間顯示器 */
+        .time-box {
+            background: var(--ocean-blue);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-family: monospace;
+            font-size: 1rem;
+            display: inline-block;
+        }
+
+        .card { 
+            background: white; border-radius: 15px; padding: 20px; margin-bottom: 20px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-top: 5px solid var(--ocean-blue);
+        }
+
+        .title { display: block; margin-top: 12px; font-size: 1.2rem; font-weight: bold; color: var(--deep-sea); }
+        .desc { font-size: 0.95rem; color: #444; margin-top: 10px; line-height: 1.6; }
+
+        /* 交通導航 */
+        .nav-info { 
+            background: #e9ecef; padding: 12px; border-radius: 10px; 
+            margin-top: 10px; font-size: 0.85rem; color: #555;
+        }
+        .nav-info b { color: var(--deep-sea); }
+
+        /* 周遊卡提醒 */
+        .pass-tag {
+            background: #ffd166; color: #000; padding: 2px 8px; 
+            border-radius: 5px; font-size: 0.8rem; font-weight: bold; margin-top: 5px; display: inline-block;
+        }
+
+        /* 腳註 */
+        .footer-note { font-size: 0.8rem; color: #888; text-align: center; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>4/5 (日) 海洋探險之旅 🦈</h1>
+        <p>海遊館 ➔ 聖瑪麗亞號 ➔ 天保山</p>
+    </div>
+
+    <div class="card">
+        <div class="time-box">08:30</div>
+        <span class="title">飯店早餐 (自理) ☕</span>
+        <div class="desc">在大國町周邊或飯店內用餐，補充體力。</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">09:30 - 10:00</div>
+        <span class="title">前往「大阪港」站 🚃</span>
+        <div class="nav-info">
+            <b>路線：</b><br>
+            1. 大國町 ➔ 本町 (御堂筋線)<br>
+            2. 本町 ➔ 大阪港 (中央線)<br>
+            3. 從 1 號出口步行約 5-10 分鐘。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">10:00 - 13:00</div>
+        <span class="title">大阪海遊館 (Kaiyukan) 🐧</span>
+        <div class="desc">
+            參觀世界最大水族館。必看：鯨鯊、企鵝區。
+        </div>
+        <div class="pass-tag">⚠️ 建議提前購票，人潮眾多</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">13:00 - 14:00</div>
+        <span class="title">午餐時間 🍱</span>
+        <div class="desc">
+            推薦：<b>天保山市場街 (Market Place)</b> 內有「浪花美食橫丁」，重現昭和時代街景，有許多大阪名物。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">14:00 - 15:00</div>
+        <span class="title">聖瑪麗亞號觀光船 ⛵</span>
+        <div class="desc">
+            遊覽大阪灣景緻。航程約 45 分鐘。
+        </div>
+        <div class="pass-tag">💳 可使用大阪周遊卡</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">15:00 - 16:00</div>
+        <span class="title">天保山大摩天輪 🎡</span>
+        <div class="desc">
+            俯瞰大阪灣與神戶方向景色。挑戰透明車廂（需排隊）。
+        </div>
+        <div class="pass-tag">💳 可使用大阪周遊卡</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">16:00 - 18:00</div>
+        <span class="title">天保山市場街逛街 🛍️</span>
+        <div class="desc">採買紀念品或在特色商場休息。</div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">18:00 - 19:00</div>
+        <span class="title">晚餐：炸牛排 🥩</span>
+        <div class="nav-info">
+            <b>交通：</b>大阪港站 ➔ 難波站。<br>
+            <b>推薦：</b>牛かつもと村 (難波店)。
+        </div>
+    </div>
+
+    <div class="footer-note">
+        ※ 建議當天早上確認海遊館預約場次 ※
+    </div>
+</div>
+
+</body>
+</html>

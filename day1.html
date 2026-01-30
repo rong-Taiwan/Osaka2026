@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大阪之旅 - Day 1</title>
+    <style>
+        :root {
+            --primary: #e63946;
+            --secondary: #457b9d;
+            --bg: #f8f9fa;
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: auto; }
+        
+        /* 標題區 */
+        .header { background: var(--primary); color: white; padding: 20px; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .header h1 { margin: 0; font-size: 1.5rem; }
+        .header p { margin: 5px 0 0; opacity: 0.9; }
+
+        /* 時間軸 */
+        .timeline { position: relative; padding-left: 30px; }
+        .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: #ddd; }
+
+        .event { position: relative; margin-bottom: 25px; background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .event::before { content: ''; position: absolute; left: -25px; top: 18px; width: 12px; height: 12px; background: var(--secondary); border-radius: 50%; border: 3px solid white; }
+
+        .time { font-weight: bold; color: var(--secondary); font-size: 0.9rem; display: block; margin-bottom: 5px; }
+        .title { font-weight: bold; font-size: 1.1rem; color: #1d3557; }
+        .desc { font-size: 0.95rem; color: #666; margin-top: 8px; line-height: 1.5; }
+        
+        /* 特別強調框 */
+        .transport-box { background: #f1faee; border-left: 4px solid #a8dadc; padding: 10px; margin-top: 10px; font-size: 0.9rem; }
+        .food-tag { display: inline-block; background: #ffe3e3; color: #e63946; padding: 2px 8px; border-radius: 5px; font-size: 0.85rem; margin-right: 5px; margin-top: 5px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>4/3 (五) 啟程大阪 ✈️</h1>
+        <p>Day 1: 道頓堀初探</p>
+    </div>
+
+    <div class="timeline">
+        <div class="event">
+            <span class="time">15:00</span>
+            <div class="title">高雄小港機場集合</div>
+            <div class="desc">準備搭乘班機前往大阪關西國際機場。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">18:15</span>
+            <div class="title">抵達關西國際機場 (KIX)</div>
+            <div class="desc">辦理入境手續與領取行李。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">18:45 - 20:00</span>
+            <div class="title">交通：前往大國町飯店</div>
+            <div class="transport-box">
+                <strong>1. 南海電鐵：</strong>搭乘「特急Rapi:t」或「機場急行」至 <b>難波站</b>。<br>
+                <strong>2. 轉乘：</strong>御堂筋線/四橋線搭 1 站至 <b>大國町站</b>。<br>
+                <strong>3. 步行：</strong>3號或5號出口步行 5-7 分鐘。
+            </div>
+        </div>
+
+        <div class="event">
+            <span class="time">20:00 - 21:00</span>
+            <div class="title">飯店辦理入住</div>
+            <div class="desc">放下行李，稍微整頓體力。</div>
+        </div>
+
+        <div class="event">
+            <span class="time">21:00 - 22:30</span>
+            <div class="title">道頓堀夜遊 & 晚餐</div>
+            <div class="desc">
+                感受大阪夜生活，與 Glico 跑跑人合影。
+                <div>
+                    <span class="food-tag">#金龍拉麵</span>
+                    <span class="food-tag">#一蘭拉麵</span>
+                    <span class="food-tag">#章魚燒</span>
+                    <span class="food-tag">#炸串</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="event">
+            <span class="time">22:30</span>
+            <div class="title">返回飯店休息</div>
+            <div class="desc">儲備體力給明天的行程。</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

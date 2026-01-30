@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4/7 大阪：大阪城與心齋橋</title>
+    <style>
+        :root {
+            --castle-gold: #c6a664;
+            --castle-black: #2b2d42;
+            --sakura-pink: #ffb7c5;
+            --bg: #ffffff;
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: auto; }
+        
+        /* 標題：大阪城大氣感 */
+        .header { 
+            background: linear-gradient(135deg, var(--castle-black), #4a4e69); 
+            color: var(--castle-gold); padding: 25px; border-radius: 15px; margin-bottom: 25px; 
+            text-align: center; border: 2px solid var(--castle-gold);
+        }
+        .header h1 { margin: 0; font-size: 1.4rem; font-weight: 800; letter-spacing: 1px; }
+
+        .time-box {
+            background: var(--castle-gold);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            display: inline-block;
+        }
+
+        .card { 
+            background: #fff; border-radius: 15px; padding: 20px; margin-bottom: 20px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative;
+        }
+        .card::after { content: '🏯'; position: absolute; right: 15px; bottom: 15px; opacity: 0.1; font-size: 2.5rem; }
+
+        .title { display: block; margin-top: 10px; font-size: 1.15rem; font-weight: bold; color: var(--castle-black); }
+        .desc { font-size: 0.95rem; color: #555; margin-top: 10px; line-height: 1.6; }
+
+        /* 交通導航 */
+        .nav-info { 
+            background: #f8f9fa; padding: 12px; border-radius: 8px; 
+            margin-top: 10px; font-size: 0.85rem; border: 1px solid #eee;
+        }
+        .nav-info b { color: var(--castle-black); }
+
+        /* 周遊卡標記 */
+        .pass-check {
+            color: #d81b60; font-size: 0.8rem; font-weight: bold; 
+            margin-top: 8px; display: block;
+        }
+
+        /* 購物提醒標記 */
+        .shop-tag { background: #fff0f5; color: #d81b60; padding: 2px 6px; border-radius: 4px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>4/7 (二) 大阪歷史與購物之旅 🏯</h1>
+        <p>大阪城 ➔ 心齋橋 ➔ 道頓堀水上漫遊</p>
+    </div>
+
+    <div class="card" style="border-top: 5px solid var(--castle-gold);">
+        <div class="time-box">09:30 - 12:30</div>
+        <span class="title">大阪城公園 & 天守閣</span>
+        <div class="nav-info">
+            <b>交通：</b>大國町 ➔ 本町 (御堂筋線) ➔ <b>森之宮 / 谷町四丁目</b> (中央線)
+        </div>
+        <div class="desc">
+            日本三大名城。登上天守閣俯瞰市景，公園內漫步賞櫻。
+        </div>
+        <span class="pass-check">💳 周遊卡：可免費進入天守閣 & 搭乘御座船</span>
+    </div>
+
+    <div class="card">
+        <div class="time-box">12:30 - 13:30</div>
+        <span class="title">午餐時間 🍜</span>
+        <div class="desc">可在公園周邊享受櫻花野餐，或前往心齋橋用餐。</div>
+    </div>
+
+    <div class="card" style="border-top: 5px solid var(--sakura-pink);">
+        <div class="time-box">13:30 - 17:30</div>
+        <span class="title">心齋橋購物天堂 🛍️</span>
+        <div class="nav-info">
+            <b>交通：</b>從大阪城周邊搭地鐵至 <b>心齋橋站</b>
+        </div>
+        <div class="desc">
+            盡情血拼！日系服飾、藥妝、精品一應俱全。
+        </div>
+        <span class="shop-tag">📍 必逛：UNIQLO 全球旗艦店</span>
+    </div>
+
+    <div class="card">
+        <div class="time-box">17:30 - 18:30</div>
+        <span class="title">晚餐：大阪燒名店 🥢</span>
+        <div class="desc">
+            推薦餐廳：<b>美津の大阪燒</b>、<b>千房</b>。<br>享受道地大阪口味。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="time-box">18:30 - 19:30</div>
+        <span class="title">道頓堀水上觀光船 🚤</span>
+        <div class="desc">
+            從水上欣賞道頓堀兩岸招牌與跑跑人燈光。
+        </div>
+        <span class="pass-check">💳 周遊卡：可免費搭乘（需先去太左衛門橋換票）</span>
+    </div>
+
+    <div class="card">
+        <div class="time-box">19:30</div>
+        <span class="title">自由活動或返回飯店</span>
+        <div class="desc">在大國町飯店休息，整理這幾天的戰利品。</div>
+    </div>
+</div>
+
+</body>
+</html>
